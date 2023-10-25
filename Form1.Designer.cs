@@ -1,6 +1,6 @@
 ﻿namespace Kursach2
 {
-    partial class Form1
+    partial class LoginForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -32,13 +32,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.loginButton = new System.Windows.Forms.Button();
-            this.clearFieldsLink = new System.Windows.Forms.LinkLabel();
+            this.clearFieldsLogLink = new System.Windows.Forms.LinkLabel();
             this.createAccLink = new System.Windows.Forms.LinkLabel();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.txtUserPassword = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.exitLabelLog = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -87,17 +88,18 @@
             this.loginButton.UseVisualStyleBackColor = false;
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
-            // clearFieldsLink
+            // clearFieldsLogLink
             // 
-            this.clearFieldsLink.AutoSize = true;
-            this.clearFieldsLink.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.clearFieldsLink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(36)))), ((int)(((byte)(216)))));
-            this.clearFieldsLink.Location = new System.Drawing.Point(193, 313);
-            this.clearFieldsLink.Name = "clearFieldsLink";
-            this.clearFieldsLink.Size = new System.Drawing.Size(74, 16);
-            this.clearFieldsLink.TabIndex = 8;
-            this.clearFieldsLink.TabStop = true;
-            this.clearFieldsLink.Text = "Clear fields";
+            this.clearFieldsLogLink.AutoSize = true;
+            this.clearFieldsLogLink.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.clearFieldsLogLink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(36)))), ((int)(((byte)(216)))));
+            this.clearFieldsLogLink.Location = new System.Drawing.Point(193, 313);
+            this.clearFieldsLogLink.Name = "clearFieldsLogLink";
+            this.clearFieldsLogLink.Size = new System.Drawing.Size(74, 16);
+            this.clearFieldsLogLink.TabIndex = 8;
+            this.clearFieldsLogLink.TabStop = true;
+            this.clearFieldsLogLink.Text = "Clear fields";
+            this.clearFieldsLogLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.clearFieldsLogLink_LinkClicked);
             // 
             // createAccLink
             // 
@@ -110,6 +112,7 @@
             this.createAccLink.TabIndex = 10;
             this.createAccLink.TabStop = true;
             this.createAccLink.Text = "If you don\'t have account, create it here";
+            this.createAccLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.createAccLink_LinkClicked);
             // 
             // txtUserName
             // 
@@ -159,16 +162,31 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // Form1
+            // exitLabelLog
+            // 
+            this.exitLabelLog.ActiveLinkColor = System.Drawing.Color.Thistle;
+            this.exitLabelLog.AutoSize = true;
+            this.exitLabelLog.Font = new System.Drawing.Font("Bahnschrift", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.exitLabelLog.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(36)))), ((int)(((byte)(216)))));
+            this.exitLabelLog.Location = new System.Drawing.Point(259, 3);
+            this.exitLabelLog.Name = "exitLabelLog";
+            this.exitLabelLog.Size = new System.Drawing.Size(31, 35);
+            this.exitLabelLog.TabIndex = 13;
+            this.exitLabelLog.TabStop = true;
+            this.exitLabelLog.Text = "X";
+            this.exitLabelLog.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(292, 447);
+            this.Controls.Add(this.exitLabelLog);
             this.Controls.Add(this.txtUserPassword);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.createAccLink);
-            this.Controls.Add(this.clearFieldsLink);
+            this.Controls.Add(this.clearFieldsLogLink);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox3);
@@ -177,9 +195,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "LoginForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -197,10 +215,11 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button loginButton;
-        private System.Windows.Forms.LinkLabel clearFieldsLink;
+        private System.Windows.Forms.LinkLabel clearFieldsLogLink;
         private System.Windows.Forms.LinkLabel createAccLink;
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.TextBox txtUserPassword;
+        private System.Windows.Forms.LinkLabel exitLabelLog;
     }
 }
 

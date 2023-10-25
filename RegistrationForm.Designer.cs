@@ -28,82 +28,85 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtUserPassword = new System.Windows.Forms.TextBox();
-            this.txtUserName = new System.Windows.Forms.TextBox();
-            this.createAccLink = new System.Windows.Forms.LinkLabel();
-            this.clearFieldsLink = new System.Windows.Forms.LinkLabel();
-            this.loginButton = new System.Windows.Forms.Button();
+            this.txtUserPasswordReg = new System.Windows.Forms.TextBox();
+            this.txtUserNameReg = new System.Windows.Forms.TextBox();
+            this.loginLink = new System.Windows.Forms.LinkLabel();
+            this.clearFieldsRegLink = new System.Windows.Forms.LinkLabel();
+            this.RegistrationButton = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.exitLabelReg = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtUserPassword
+            // txtUserPasswordReg
             // 
-            this.txtUserPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUserPassword.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtUserPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(36)))), ((int)(((byte)(216)))));
-            this.txtUserPassword.Location = new System.Drawing.Point(65, 276);
-            this.txtUserPassword.Multiline = true;
-            this.txtUserPassword.Name = "txtUserPassword";
-            this.txtUserPassword.Size = new System.Drawing.Size(202, 24);
-            this.txtUserPassword.TabIndex = 23;
+            this.txtUserPasswordReg.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUserPasswordReg.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtUserPasswordReg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(36)))), ((int)(((byte)(216)))));
+            this.txtUserPasswordReg.Location = new System.Drawing.Point(65, 276);
+            this.txtUserPasswordReg.Multiline = true;
+            this.txtUserPasswordReg.Name = "txtUserPasswordReg";
+            this.txtUserPasswordReg.Size = new System.Drawing.Size(202, 24);
+            this.txtUserPasswordReg.TabIndex = 23;
             // 
-            // txtUserName
+            // txtUserNameReg
             // 
-            this.txtUserName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUserName.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(36)))), ((int)(((byte)(216)))));
-            this.txtUserName.Location = new System.Drawing.Point(65, 236);
-            this.txtUserName.Multiline = true;
-            this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(202, 24);
-            this.txtUserName.TabIndex = 22;
+            this.txtUserNameReg.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUserNameReg.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtUserNameReg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(36)))), ((int)(((byte)(216)))));
+            this.txtUserNameReg.Location = new System.Drawing.Point(65, 236);
+            this.txtUserNameReg.Multiline = true;
+            this.txtUserNameReg.Name = "txtUserNameReg";
+            this.txtUserNameReg.Size = new System.Drawing.Size(202, 24);
+            this.txtUserNameReg.TabIndex = 22;
             // 
-            // createAccLink
+            // loginLink
             // 
-            this.createAccLink.AutoSize = true;
-            this.createAccLink.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.createAccLink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(36)))), ((int)(((byte)(216)))));
-            this.createAccLink.Location = new System.Drawing.Point(32, 412);
-            this.createAccLink.Name = "createAccLink";
-            this.createAccLink.Size = new System.Drawing.Size(229, 16);
-            this.createAccLink.TabIndex = 21;
-            this.createAccLink.TabStop = true;
-            this.createAccLink.Text = "If you don\'t have account, create it here";
+            this.loginLink.AutoSize = true;
+            this.loginLink.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.loginLink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(36)))), ((int)(((byte)(216)))));
+            this.loginLink.Location = new System.Drawing.Point(55, 412);
+            this.loginLink.Name = "loginLink";
+            this.loginLink.Size = new System.Drawing.Size(183, 16);
+            this.loginLink.TabIndex = 21;
+            this.loginLink.TabStop = true;
+            this.loginLink.Text = "If you have account, log in here";
+            this.loginLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.loginLink_LinkClicked);
             // 
-            // clearFieldsLink
+            // clearFieldsRegLink
             // 
-            this.clearFieldsLink.AutoSize = true;
-            this.clearFieldsLink.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.clearFieldsLink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(36)))), ((int)(((byte)(216)))));
-            this.clearFieldsLink.Location = new System.Drawing.Point(193, 313);
-            this.clearFieldsLink.Name = "clearFieldsLink";
-            this.clearFieldsLink.Size = new System.Drawing.Size(74, 16);
-            this.clearFieldsLink.TabIndex = 20;
-            this.clearFieldsLink.TabStop = true;
-            this.clearFieldsLink.Text = "Clear fields";
+            this.clearFieldsRegLink.AutoSize = true;
+            this.clearFieldsRegLink.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.clearFieldsRegLink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(36)))), ((int)(((byte)(216)))));
+            this.clearFieldsRegLink.Location = new System.Drawing.Point(193, 313);
+            this.clearFieldsRegLink.Name = "clearFieldsRegLink";
+            this.clearFieldsRegLink.Size = new System.Drawing.Size(74, 16);
+            this.clearFieldsRegLink.TabIndex = 20;
+            this.clearFieldsRegLink.TabStop = true;
+            this.clearFieldsRegLink.Text = "Clear fields";
+            this.clearFieldsRegLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.clearFieldsRegLink_LinkClicked);
             // 
-            // loginButton
+            // RegistrationButton
             // 
-            this.loginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(36)))), ((int)(((byte)(216)))));
-            this.loginButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.loginButton.FlatAppearance.BorderSize = 0;
-            this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.loginButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.loginButton.ForeColor = System.Drawing.Color.White;
-            this.loginButton.Location = new System.Drawing.Point(25, 379);
-            this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(242, 30);
-            this.loginButton.TabIndex = 19;
-            this.loginButton.Text = "LOG IN";
-            this.loginButton.UseVisualStyleBackColor = false;
+            this.RegistrationButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(36)))), ((int)(((byte)(216)))));
+            this.RegistrationButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.RegistrationButton.FlatAppearance.BorderSize = 0;
+            this.RegistrationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RegistrationButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RegistrationButton.ForeColor = System.Drawing.Color.White;
+            this.RegistrationButton.Location = new System.Drawing.Point(25, 379);
+            this.RegistrationButton.Name = "RegistrationButton";
+            this.RegistrationButton.Size = new System.Drawing.Size(242, 30);
+            this.RegistrationButton.TabIndex = 19;
+            this.RegistrationButton.Text = "REGISTER";
+            this.RegistrationButton.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -160,17 +163,32 @@
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
+            // exitLabelReg
+            // 
+            this.exitLabelReg.ActiveLinkColor = System.Drawing.Color.Thistle;
+            this.exitLabelReg.AutoSize = true;
+            this.exitLabelReg.Font = new System.Drawing.Font("Bahnschrift", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.exitLabelReg.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(36)))), ((int)(((byte)(216)))));
+            this.exitLabelReg.Location = new System.Drawing.Point(259, 3);
+            this.exitLabelReg.Name = "exitLabelReg";
+            this.exitLabelReg.Size = new System.Drawing.Size(31, 35);
+            this.exitLabelReg.TabIndex = 24;
+            this.exitLabelReg.TabStop = true;
+            this.exitLabelReg.Text = "X";
+            this.exitLabelReg.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.exitLabelReg_LinkClicked);
+            // 
             // RegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(292, 447);
-            this.Controls.Add(this.txtUserPassword);
-            this.Controls.Add(this.txtUserName);
-            this.Controls.Add(this.createAccLink);
-            this.Controls.Add(this.clearFieldsLink);
-            this.Controls.Add(this.loginButton);
+            this.Controls.Add(this.exitLabelReg);
+            this.Controls.Add(this.txtUserPasswordReg);
+            this.Controls.Add(this.txtUserNameReg);
+            this.Controls.Add(this.loginLink);
+            this.Controls.Add(this.clearFieldsRegLink);
+            this.Controls.Add(this.RegistrationButton);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.panel1);
@@ -191,16 +209,17 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtUserPassword;
-        private System.Windows.Forms.TextBox txtUserName;
-        private System.Windows.Forms.LinkLabel createAccLink;
-        private System.Windows.Forms.LinkLabel clearFieldsLink;
-        private System.Windows.Forms.Button loginButton;
+        private System.Windows.Forms.TextBox txtUserPasswordReg;
+        private System.Windows.Forms.TextBox txtUserNameReg;
+        private System.Windows.Forms.LinkLabel loginLink;
+        private System.Windows.Forms.LinkLabel clearFieldsRegLink;
+        private System.Windows.Forms.Button RegistrationButton;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.LinkLabel exitLabelReg;
     }
 }

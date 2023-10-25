@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Kursach2
 {
-    public partial class Form1 : Form
+    public partial class LoginForm : Form
     {
-        public Form1()
+        public LoginForm()
         {
             InitializeComponent();
         }
@@ -22,7 +22,7 @@ namespace Kursach2
             if(txtUserName.Text == "1111" && txtUserPassword.Text == "1111")
             {
                 this.Hide();
-                new RegistrationForm().Show();
+                new MainMenu().Show();
             }
             else
             {
@@ -31,6 +31,24 @@ namespace Kursach2
                 txtUserPassword.Clear();
                 txtUserName.Focus();
             }
+        }
+
+        private void createAccLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            new RegistrationForm().Show();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void clearFieldsLogLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            txtUserName.Clear();
+            txtUserPassword.Clear();
+            txtUserName.Focus();
         }
     }
 }

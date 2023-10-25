@@ -16,5 +16,23 @@ namespace Kursach2
         {
             InitializeComponent();
         }
+
+        private void exitLabelReg_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void loginLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            new LoginForm().Show();
+        }
+
+        private void clearFieldsRegLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            txtUserNameReg.Clear();
+            txtUserPasswordReg.Clear();
+            txtUserNameReg.Focus();
+        }
     }
 }
