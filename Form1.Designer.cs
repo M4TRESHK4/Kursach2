@@ -131,8 +131,10 @@
             this.txtUserPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(36)))), ((int)(((byte)(216)))));
             this.txtUserPassword.Location = new System.Drawing.Point(65, 276);
             this.txtUserPassword.Name = "txtUserPassword";
+            this.txtUserPassword.PasswordChar = '*';
             this.txtUserPassword.Size = new System.Drawing.Size(202, 19);
             this.txtUserPassword.TabIndex = 12;
+            this.txtUserPassword.Tag = "";
             // 
             // pictureBox3
             // 

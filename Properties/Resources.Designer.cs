@@ -63,6 +63,16 @@ namespace Kursach2.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap background_of_gradient_lights {
+            get {
+                object obj = ResourceManager.GetObject("background-of-gradient-lights", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_вход_в_систему__в_кружке__стрелка_вправо_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-вход-в-систему,-в-кружке,-стрелка-вправо-96", resourceCulture);

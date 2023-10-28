@@ -53,6 +53,7 @@
             this.txtUserPasswordReg.Location = new System.Drawing.Point(65, 276);
             this.txtUserPasswordReg.Multiline = true;
             this.txtUserPasswordReg.Name = "txtUserPasswordReg";
+            this.txtUserPasswordReg.PasswordChar = '*';
             this.txtUserPasswordReg.Size = new System.Drawing.Size(202, 24);
             this.txtUserPasswordReg.TabIndex = 23;
             // 

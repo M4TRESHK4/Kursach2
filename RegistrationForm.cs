@@ -34,5 +34,7 @@ namespace Kursach2
             txtUserPasswordReg.Clear();
             txtUserNameReg.Focus();
         }
+
+       
     }
 }
